@@ -20,33 +20,38 @@
 
     <hero>
         <div class="container-global" id="containerGlobal">
-            <img class="bg-circle" src="./assets/icon-star.svg" alt="imagen de un icono de una estrella" />
+            <div class="bg-circle">
+                <img src="./assets/icon-star.svg" alt="imagen de un icono de una estrella" />
+            </div>
             <h1>¿Cómo lo hicimos?</h1>
             <p>Por favor, haznos saber cómo lo hicimos con tu solicitud de soporte.
-                <br>Todos los comentarios son bienvenidos para ayudarnos a mejorar nuestra oferta!
+                <br>
+                Todos los comentarios son bienvenidos para ayudarnos a mejorar nuestra oferta!
             </p>
 
             <nav class="box-buttons">
                 <ul>
-                    <li><button class="circle-button" type="button" id="opinion1">1</button></li>
-                    <li><button class="circle-button" type="button" id="opinion2">2</button></li>
-                    <li><button class="circle-button" type="button" id="opinion3">3</button></li>
-                    <li><button class="circle-button" type="button" id="opinion4">4</button></li>
-                    <li><button class="circle-button" type="button" id="opinion5">5</button></li>
+                    <li><button class="circle-button" data-value="1">1</button></li>
+                    <li><button class="circle-button" data-value="2">2</button></li>
+                    <li><button class="circle-button" data-value="3">3</button></li>
+                    <li><button class="circle-button" data-value="4">4</button></li>
+                    <li><button class="circle-button" data-value="5">5</button></li>
                 </ul>
             </nav>
 
-            <button class="button-send" id="buttonSend" onclick="showOpinion()">Enviar</button>
+            <button class="button-send">ENVIAR</button>
         </div>
 
-        <div class="container-sencondary" id="containerSencondary" hidden>
-            <img src="./assets/illustration-thank-you.svg"
-                alt="imagen de una ilustración móvil con documentos que entran y salen" />
-            <div class="container-solution">Seleccionaste X de X</div>
-            <h1>¡Gracias!</h1>
-            <p>Agradecemos que te hayas tomado el tiempo de la calificación.
-                <br>Si alguna vez necesitas más ayuda, no dudes en volver a ponerte en contacto con nosotros.
-            </p>
+        <div class="container-secondary" id="containerSecondary" hidden>
+            <div class="container-secondary-centered">
+                <img src="./assets/illustration-thank-you.svg"
+                    alt="imagen de una ilustración móvil con documentos que entran y se puntúan" />
+                <div class="container-solution">Seleccionaste <span id="selected-value">X</span> de 5</div>
+                <h1>¡Gracias!</h1>
+                <p>Agradecemos que te hayas tomado el tiempo de la calificación.
+                    <br>Si alguna vez necesitas más ayuda, no dudes en volver a ponerte en contacto con nosotros.
+                </p>
+            </div>
         </div>
     </hero>
 </body>
