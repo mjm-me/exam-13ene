@@ -9,54 +9,32 @@
 
     <title>Examen practico 2025-01-13</title>
     <link rel="icon" type="image/png" href="./favicon-32x32.png">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,400;0,700;00;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./style/style.css">
     <script src="./script/script.js" defer></script>
 </head>
 
-<main>
-    <h1>¿Cpmo lo hicimos?</h1>
+<body>
+    <hero class="container1">
+        <img src="./assets/icon-star.svg" alt="imagen de un icono de una estrella" />
+        <h1>¿Cómo lo hicimos?</h1>
+        <p>Por favor, haznos saber cómo lo hicimos con tu solicitud de soporte.</p>
+        <p>Todos los comentarios son bienvenidos para ayudarnos a mejorar nuestra oferta!</p>
 
-    <main>
+        <nav>
+            <ul>
+                <li><button>1</button></li>
+                <li><button>2</button></li>
+                <li><button>3</button></li>
+                <li><button>4</button></li>
+                <li><button>5</button></li>
+            </ul>
+        </nav>
 
-        <form id="playerForm">
-            <div class="player-input">
-                <div>
-                    <label for="player1Name">Nombre Jugador 1:</label>
-                    <input type="text" id="player1Name" required>
-                </div>
-                <div>
-                    <label for="player1Alias">Alias Jugador 1:</label>
-                    <input type="text" id="player1Alias" required>
-                </div>
-            </div>
-            <div class="player-input">
-                <div>
-                    <label for="player2Name">Nombre Jugador 2:</label>
-                    <input type="text" id="player2Name" required>
-                </div>
-                <div>
-                    <label for="player2Alias">Alias Jugador 2:</label>
-                    <input type="text" id="player2Alias" required>
-                </div>
-            </div>
-            <button type="submit">Guardar y Jugar</button>
-        </form>
-
-        <div id="game" class="hidden">
-            <div id="playerInfo"></div>
-            <div id="currentPlayer"></div>
-            <div id="board">
-                <!-- Tablero de juego -->
-            </div>
-            <button id="resetBtn">Reiniciar Partida</button>
-            <button id="newGameBtn">Nuevo Juego</button>
-        </div>
-    </main>
-    </body>
+        <button>Enviar</button>
+    </hero>
+</body>
 
 </html>
