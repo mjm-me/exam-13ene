@@ -3,10 +3,53 @@
 */
 
 body {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
   font-family: "Overpass", san serif;
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 400;
   line-height: normal;
   background-color: hsl(216, 12%, 8%);
   color: hsl(217, 12%, 63%);
+}
+
+.container-global {
+  width: 375px;
+  background: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+  border: solid 1px hsl(217, 12%, 63%);
+  border-radius: 20px;
+  background-size: cover;
+  background-position: left;
+  text-align: left;
+  padding: 60px;
+
+  .bckg-circle {
+    background: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+    border: solid 1px hsl(217, 12%, 63%);
+    padding: 25px;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    color: hsl(0, 0%, 100%);
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: hsl(217, 12%, 63%);
+  }
+
+  .button-send {
+    background-color: hsl(25, 97%, 53%);
+    color: (217, 12%, 63%);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
 }
