@@ -19,7 +19,7 @@
 <body>
 
     <hero>
-        <div class="container-global">
+        <div class="container-global" id="containerGlobal">
             <img class="bg-circle" src="./assets/icon-star.svg" alt="imagen de un icono de una estrella" />
             <h1>¿Cómo lo hicimos?</h1>
             <p>Por favor, haznos saber cómo lo hicimos con tu solicitud de soporte.
@@ -28,18 +28,18 @@
 
             <nav class="box-buttons">
                 <ul>
-                    <li><button class="circle-button">1</button></li>
-                    <li><button class="circle-button">2</button></li>
-                    <li><button class="circle-button">3</button></li>
-                    <li><button class="circle-button">4</button></li>
-                    <li><button class="circle-button">5</button></li>
+                    <li><button class="circle-button" type="button" id="opinion1">1</button></li>
+                    <li><button class="circle-button" type="button" id="opinion2">2</button></li>
+                    <li><button class="circle-button" type="button" id="opinion3">3</button></li>
+                    <li><button class="circle-button" type="button" id="opinion4">4</button></li>
+                    <li><button class="circle-button" type="button" id="opinion5">5</button></li>
                 </ul>
             </nav>
 
-            <button class="button-send" type="submit">Enviar</button>
+            <button class="button-send" id="button-send" onclick="showOpinion()">Enviar</button>
         </div>
 
-        <div class="container-sencondary">
+        <div class="container-sencondary" id="containerSencondary" hidden>
             <img src="./assets/illustration-thank-you.svg"
                 alt="imagen de una ilustración móvil con documentos que entran y salen" />
             <div class="container-solution">Seleccionaste X de X</div>
